@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>CSS浮动属性</title>
+		<!--
+			CSS浮动属性：（符号一种流式布局）
+			加载页面时，按照标签的先后顺序形成一个文档流
+			文档对象（document；js），某个标签设置了浮动属性（float）
+			那么就脱离了当前的文档流，然后后面的元素就随之变化（位置发生变化）
+			
+			清除某个元素的浮动：
+			#clear{
+				clear:both：两边都不浮动（常用）
+				      left：左边不浮动
+				      right：右边不浮动
+				
+			}
+		-->
+		<style>
+			#d11{
+				width:100px;
+				height: 100px;
+				/*显示边框*/
+				border: 1px solid #000;
+				/*背景颜色*/
+				background-color: #F00;
+				/*设置右浮动*/
+				float:right;
+			}
+			#d12{
+				width:100px;
+				height: 100px;
+				/*显示边框*/
+				border: 1px solid #000;
+				/*背景颜色*/
+				background-color: #0F0;
+				/*设置右浮动*/
+				float:right;
+			}
+			#d13{
+				width:100px;
+				height: 100px;
+				/*显示边框*/
+				border: 1px solid #000;
+				/*背景颜色*/
+				background-color: #00F;
+				/*设置右浮动*/
+				float:right;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="d11">aaa</div>
+		<div id="d12">bbb</div>
+		<div id="d13">ccc</div>
+	</body>
+</html>
